@@ -1,3 +1,4 @@
+#IN PROGRESS---------
 # 🚀 End-to-End SQL Data Analytics Project
 
 Welcome to my Data Analytics Project! This repository demonstrates a comprehensive, industry-standard data solution—taking raw data and architecting it into actionable business insights using the Medallion Architecture.
