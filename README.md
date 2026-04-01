@@ -78,21 +78,19 @@ Tracking business growth and identifying seasonal patterns.
 └── README.md                           # Project overview
 
 ```
-## 🌟 About Me
-Hi, I’m Loknadh_Kona (but you can call me Loki). ⚡
-With an MS in Data Science and hands-on experience as a Systems Engineer and Data Scientist, I specialize in turning raw data into strategic assets. I approach a messy dataset a lot like a heavy lifting session at the gym: it takes discipline, the right technique, and a little bit of sweat to build solutions that scale and are built to last.
+🌟 About Me
+Hi, I’m Loknadh_Kona (but you can call me Loki). ⚡ With an MS in Data Science and hands-on experience as a Systems Engineer and Data Scientist, I specialize in turning raw data into strategic assets. I approach complex data challenges a lot like a heavy lifting session at the gym: it takes discipline, the right technique, and a little bit of sweat to build solutions that scale and deliver real results.
 
-### Why I Built This Project
+## Why I Built This Project
+While my previous repository focused on the heavy backend engineering of building a Data Warehouse, I developed this project to showcase the other half of the equation: extracting actionable business value. I wanted to demonstrate my ability to step into a Business Intelligence role, write advanced, highly optimized T-SQL, and translate a pristine Star Schema into strategic insights that stakeholders can actually use to drive decisions.
 
-I developed this repository to demonstrate my ability to own the entire data lifecycle from end to end. I wanted to showcase that I can bridge the gap between building resilient backend data architecture and delivering front-end business value—proving I can handle both the heavy lifting of data engineering and the nuanced logic of advanced analytics.
+## What I Accomplished Here
 
-### What I Accomplished Here
+Executed Advanced T-SQL: Leveraged complex window functions, Common Table Expressions (CTEs), and dynamic aggregations to perform deep-dive analyses on Gold-layer data.
 
-Architected a Data Warehouse: Designed and built a modern data warehouse from scratch using the industry-standard Medallion Architecture.
+Engineered Strategic Segmentation: Categorized customers and products based on behavioral metrics, purchasing lifespans, and historical profitability to identify key drivers of business growth.
 
-Engineered ETL Pipelines: Wrote robust T-SQL scripts to extract raw, fragmented ERP and CRM data (Bronze), cleanse and normalize it (Silver), and model it into a high-performance Star Schema (Gold).
-
-Delivered Business Intelligence: Transformed chaotic CSV files into a centralized, single source of truth capable of answering complex business questions regarding customer segmentation, product inventory, and sales forecasting.
+Delivered Performance Analytics: Built cumulative and time-series analyses (including Year-over-Year and Month-over-Month tracking) to uncover sales trends, benchmark performance, and provide a clear picture of overall business health.
 
 ## Let's connect
 If something I've built looks interesting or useful, feel free to reach out.
