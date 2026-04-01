@@ -1,4 +1,4 @@
-# 🚀 SQL Data Analytics & Business Intelligence Project
+# 🚀 SQL Data Analytics Project
 
 Welcome to my SQL Data Analytics Project! This repository is dedicated to extracting actionable business insights, tracking key performance indicators (KPIs), and performing deep-dive data analysis using Advanced T-SQL.
 
