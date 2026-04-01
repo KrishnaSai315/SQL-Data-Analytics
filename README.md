@@ -56,7 +56,7 @@ Tracking business growth and identifying seasonal patterns.
 
 ```text
 ├── datasets/                           # Processed Gold Layer datasets (CSV)
-│   └── gold/                           # Fact and Dimension tables used for analysis
+│   └── csv-files/                           # CSV files that contain Fact and Dimension tables used for analysis
 │
 ├── docs/                               # Project roadmap and analytical requirement sketches
 │
