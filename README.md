@@ -55,3 +55,11 @@ I developed optimized SQL-based analytics to extract detailed insights regarding
 │   └── 13_report_products.sql          # Product reporting views
 │
 └── README.md                           # Project overview
+
+```
+
+## Let's connect
+If something I've built looks interesting or useful, feel free to reach out.
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lvkrishna3/)
+[![Email](https://img.shields.io/badge/Gmail-D14836?style=flat&logo=gmail&logoColor=white)](mailto:loknadh.kona@gmail.com)
