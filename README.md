@@ -78,7 +78,7 @@ Tracking business growth and identifying seasonal patterns.
 └── README.md                           # Project overview
 
 ```
-🌟 About Me
+## 🌟 About Me
 Hi, I’m Loknadh_Kona (but you can call me Loki). ⚡ With an MS in Data Science and hands-on experience as a Systems Engineer and Data Scientist, I specialize in turning raw data into strategic assets. I approach complex data challenges a lot like a heavy lifting session at the gym: it takes discipline, the right technique, and a little bit of sweat to build solutions that scale and deliver real results.
 
 ## Why I Built This Project
