@@ -1,62 +1,98 @@
-#IN PROGRESS---------
-# 🚀 End-to-End SQL Data Analytics Project
+# 🚀 SQL Data Analytics & Business Intelligence Project
 
-Welcome to my Data Analytics Project! This repository demonstrates a comprehensive, industry-standard data solution—taking raw data and architecting it into actionable business insights using the Medallion Architecture.
+Welcome to my SQL Data Analytics Project! This repository is dedicated to extracting actionable business insights, tracking key performance indicators (KPIs), and performing deep-dive data analysis using Advanced T-SQL.
 
----
+### 🔗 The Data Source
+This project represents the analytical phase of my end-to-end data architecture. All queries and reports in this repository are executed against the **Gold Layer** (Fact and Dimension tables) that I built from scratch in my previous project. 
 
-## 🏗️ Data Architecture
-
-To ensure data quality and scalability, I designed the architecture for this project using the **Medallion Architecture** (Bronze, Silver, and Gold layers):
-
-1. **Bronze Layer (Raw):** Stores raw data exactly as it arrives from the source systems (ERP and CRM).
-2. **Silver Layer (Cleansed):** The transformation hub. Here, I implemented data cleansing, standardization, and normalization processes to resolve quality issues.
-3. **Gold Layer (Curated):** The analytical powerhouse. This layer houses business-ready data, modeled into a star schema (Fact and Dimension tables) optimized for high-level analytical queries and reporting.
+> **View the foundational data architecture here:** > [End-to-End SQL Data Warehouse Project](https://github.com/KrishnaSai315/sql-DataWarehouse_Project) *(This links to the ingestion, transformation, and dimensional modeling of the raw ERP and CRM data).*
 
 ---
 
-## 🛠️ Tech Stack & Core Competencies
+## 🏗️ Analytics Architecture & Roadmap
+
+![Project Roadmap](docs/Project%20Roadmap.png)
+
+With the data successfully modeled into a Star Schema, the objective of this repository is to answer high-level business questions and empower stakeholders with data-driven reports. 
+
+## 📊 Core Analytical Objectives
+
+Based on the project requirements, I engineered complex SQL scripts to analyze three primary business domains:
+
+### 1. Customer Analysis
+Understanding who the customers are and how they interact with the business.
+* **Demographic Profiling:** Analyzing distribution across age groups, genders, and geographic locations (countries).
+* **Customer Segmentation:** Classifying customers into distinct categories (e.g., **VIP**, **Regular**, and **New**) based on their purchasing lifespan and total spending.
+* **Behavioral Metrics:** Calculating average order values, average monthly spending, and customer recency.
+
+### 2. Product Analysis
+Evaluating inventory and catalog performance.
+* **Category Performance:** Identifying which product categories and subcategories drive the most revenue.
+* **Profitability & Costs:** Analyzing the average costs and pricing distributions across the product lines.
+* **Performance Ranking:** Utilizing Window Functions to rank the top-performing and worst-performing products.
+
+### 3. Sales & Trend Analysis
+Tracking business growth and identifying seasonal patterns.
+* **Time Series Analysis:** Aggregating sales by Year, Month, and Quarter to spot trends.
+* **Cumulative Tracking:** Calculating running totals and moving averages to measure sustained growth.
+* **Performance Benchmarking:** Implementing Year-over-Year (YoY) and Month-over-Month (MoM) comparisons to track increases or decreases in revenue.
+
+---
+
+## 🛠️ Tech Stack & SQL Techniques
 
 - **Database Engine:** SQL Server
-- **Management & Scripting:** SQL Server Management Studio (SSMS), Advanced T-SQL
-- **Data Architecture:** Medallion Architecture, Star Schema Design
-- **Data Engineering:** ETL Processes, Data Cleansing, Normalization
-- **Data Analytics:** Business Intelligence Reporting, Customer Segmentation, Performance Analysis
-
----
-
-## 📖 Business Objectives & Execution
-
-**The Goal:** Empower stakeholders with data-driven answers to core business questions.
-I developed optimized SQL-based analytics to extract detailed insights regarding:
-* **Customer Behavior:** Demographics, segmentation (VIP vs. Regular), and purchasing trends.
-* **Product Performance:** Inventory movement, top-performing categories, and historical profitability.
-* **Sales Trends:** Year-over-year growth, cumulative analysis, and revenue forecasting.
-
-*(For an in-depth look at the queries, see the numbered SQL scripts in the repository).*
+- **Core Tool:** SQL Server Management Studio (SSMS)
+- **Advanced T-SQL Utilized:**
+  - Common Table Expressions (CTEs) & Subqueries
+  - Window Functions (`RANK()`, `DENSE_RANK()`, `ROW_NUMBER()`, `LAG()`, `OVER()`)
+  - Aggregations (`SUM`, `COUNT`, `AVG`) & Grouping
+  - Date and Time functions (`DATEDIFF`, `DATETRUNC`, `FORMAT`)
+  - Conditional Logic (`CASE WHEN` statements for segmentation)
 
 ---
 
 ## 📂 Repository Structure
 
 ```text
-├── datasets/                           # Raw and processed datasets (CSV)
-│   ├── bronze/                         # Raw ERP and CRM data
-│   ├── silver/                         # Cleansed and normalized data
-│   └── gold/                           # Modeled data for analytics
+├── datasets/                           # Processed Gold Layer datasets (CSV)
+│   └── gold/                           # Fact and Dimension tables used for analysis
 │
-├── docs/                               # Architecture blueprints and project roadmap
+├── docs/                               # Project roadmap and analytical requirement sketches
 │
-├── scripts/                            # Core T-SQL scripts
-│   ├── 00_init_database.sql            # DDL and ingestion scripts
-│   ├── 01_database_exploration.sql     # Database structure exploration
-│   ├── ...                             # (Various exploratory and analytical scripts)
-│   ├── 12_report_customers.sql         # Customer reporting views
-│   └── 13_report_products.sql          # Product reporting views
+├── scripts/                            # Core analytical T-SQL scripts
+│   ├── 01_database_exploration.sql     # Database structure and metadata exploration
+│   ├── 02_dimensions_exploration.sql   # Distinct values and categorical analysis
+│   ├── 03_date_range_exploration.sql   # Temporal boundaries analysis
+│   ├── 04_measures_exploration.sql     # High-level aggregations and KPIs
+│   ├── 05_magnitude_analysis.sql       # Distribution of metrics across dimensions
+│   ├── 06_ranking_analysis.sql         # Top/Bottom N analysis using Window Functions
+│   ├── 07_change_over_time_analysis.sql# Time-series and seasonal trends
+│   ├── 08_cumulative_analysis.sql      # Running totals and moving averages
+│   ├── 09_performance_analysis.sql     # YoY and MoM performance tracking
+│   ├── 10_data_segmentation.sql        # Categorizing data into logical business segments
+│   ├── 11_part_to_whole_analysis.sql   # Market share and proportion analysis
+│   ├── 12_report_customers.sql         # Comprehensive customer reporting view
+│   └── 13_report_products.sql          # Comprehensive product reporting view
 │
 └── README.md                           # Project overview
 
 ```
+## 🌟 About Me
+Hi, I’m Loknadh_Kona (but you can call me Loki). ⚡
+With an MS in Data Science and hands-on experience as a Systems Engineer and Data Scientist, I specialize in turning raw data into strategic assets. I approach a messy dataset a lot like a heavy lifting session at the gym: it takes discipline, the right technique, and a little bit of sweat to build solutions that scale and are built to last.
+
+### Why I Built This Project
+
+I developed this repository to demonstrate my ability to own the entire data lifecycle from end to end. I wanted to showcase that I can bridge the gap between building resilient backend data architecture and delivering front-end business value—proving I can handle both the heavy lifting of data engineering and the nuanced logic of advanced analytics.
+
+### What I Accomplished Here
+
+Architected a Data Warehouse: Designed and built a modern data warehouse from scratch using the industry-standard Medallion Architecture.
+
+Engineered ETL Pipelines: Wrote robust T-SQL scripts to extract raw, fragmented ERP and CRM data (Bronze), cleanse and normalize it (Silver), and model it into a high-performance Star Schema (Gold).
+
+Delivered Business Intelligence: Transformed chaotic CSV files into a centralized, single source of truth capable of answering complex business questions regarding customer segmentation, product inventory, and sales forecasting.
 
 ## Let's connect
 If something I've built looks interesting or useful, feel free to reach out.
