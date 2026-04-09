@@ -1,6 +1,6 @@
 # 🚀 SQL Data Analytics Project
 
-Welcome to my SQL Data Analytics Project! This repository is dedicated to extracting actionable business insights, tracking key performance indicators (KPIs), and performing deep-dive data analysis using Advanced T-SQL.
+Welcome to my SQL Data Analytics Project! This repository is dedicated to extracting actionable business insights, tracking key performance indicators (KPIs), and performing deep-dive data analysis using advanced T-SQL.
 
 ### 🔗 The Data Source
 This project represents the analytical phase of my end-to-end data architecture. All queries and reports in this repository are executed against the **Gold Layer** (Fact and Dimension tables) that I built from scratch in my previous project. 
