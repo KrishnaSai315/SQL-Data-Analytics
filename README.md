@@ -11,6 +11,10 @@ This project represents the analytical phase of my end-to-end data architecture.
 
 ## 🏗️ Analytics Architecture & Roadmap
 
+
+<img src="./docs/architecture.svg" alt="SQL Data Analytics Architecture" width="100%"/>
+
+
 ![Project Roadmap](docs/Project%20Roadmap.png)
 
 With the data successfully modeled into a Star Schema, the objective of this repository is to answer high-level business questions and empower stakeholders with data-driven reports. 
