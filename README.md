@@ -2,6 +2,8 @@
 
 Welcome to my SQL Data Analytics Project! This repository is dedicated to extracting actionable business insights, tracking key performance indicators (KPIs), and performing deep-dive data analysis using advanced T-SQL.
 
+![SQL Data Analytics Architecture](./docs/architecture.svg)
+
 ### 🔗 The Data Source
 This project represents the analytical phase of my end-to-end data architecture. All queries and reports in this repository are executed against the **Gold Layer** (Fact and Dimension tables) that I built from scratch in my previous project. 
 
@@ -10,10 +12,6 @@ This project represents the analytical phase of my end-to-end data architecture.
 ---
 
 ## 🏗️ Analytics Architecture & Roadmap
-
-
-<img src="./docs/architecture.svg" alt="SQL Data Analytics Architecture" width="100%"/>
-
 
 ![Project Roadmap](docs/Project%20Roadmap.png)
 
